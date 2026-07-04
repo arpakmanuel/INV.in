@@ -1,0 +1,40 @@
+/* ============================================================
+   INV.UI Typography v1.0
+   ============================================================ */
+
+:root{
+
+    /* Font Family */
+
+    --font-heading:'Playfair Display',serif;
+    --font-body:'DM Sans',sans-serif;
+
+    /* Font Weight */
+
+    --fw-regular:400;
+    --fw-medium:500;
+    --fw-semibold:600;
+    --fw-bold:700;
+
+    /* Heading */
+
+    --text-display:40px;
+
+    --text-h1:32px;
+    --text-h2:28px;
+    --text-h3:24px;
+    --text-h4:20px;
+
+    /* Body */
+
+    --text-lg:18px;
+    --text-md:16px;
+    --text-sm:14px;
+    --text-xs:12px;
+
+    /* Line Height */
+
+    --lh-tight:1.2;
+    --lh-normal:1.5;
+    --lh-relaxed:1.8;
+}

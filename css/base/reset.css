@@ -1,0 +1,82 @@
+/* ============================================================
+   INV.UI Reset v1.0
+   Project : INV.in Core
+   ============================================================ */
+
+/* Box sizing */
+
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+}
+
+/* Remove default margin */
+
+*{
+    margin:0;
+    padding:0;
+}
+
+/* Better scrolling */
+
+html{
+    scroll-behavior:smooth;
+    -webkit-text-size-adjust:100%;
+}
+
+/* Body */
+
+body{
+    min-height:100vh;
+    text-rendering:optimizeLegibility;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+
+/* Images */
+
+img,
+picture,
+video,
+canvas,
+svg{
+    display:block;
+    max-width:100%;
+}
+
+/* Forms */
+
+input,
+button,
+textarea,
+select{
+    font:inherit;
+}
+
+button{
+    border:none;
+    background:none;
+    cursor:pointer;
+}
+
+/* Links */
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+/* Lists */
+
+ul,
+ol{
+    list-style:none;
+}
+
+/* Tables */
+
+table{
+    border-collapse:collapse;
+    border-spacing:0;
+}
