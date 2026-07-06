@@ -5,76 +5,193 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <title>INV.UI Showcase</title>
 
     <!-- Google Fonts -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+          rel="stylesheet">
 
     <!-- Base CSS -->
 
-    <link rel="stylesheet" href="../../css/base/reset.css">
+    <link rel="stylesheet"
+          href="../../css/base/reset.css">
 
-    <link rel="stylesheet" href="../../css/base/tokens.css">
+    <link rel="stylesheet"
+          href="../../css/base/tokens.css">
 
-    <link rel="stylesheet" href="../../css/base/typography.css">
+    <link rel="stylesheet"
+          href="../../css/base/typography.css">
 
-    <link rel="stylesheet" href="../../css/base/globals.css">
+    <link rel="stylesheet"
+          href="../../css/base/globals.css">
 
-    <!-- Component CSS -->
+    <!-- Layout -->
 
-    <link rel="stylesheet" href="../../components/button/style.css">
+    <link rel="stylesheet"
+          href="../../css/layouts/showcase.css">
 
-    <link rel="stylesheet" href="../../components/input/style.css">
+    <!-- Components -->
+
+    <link rel="stylesheet"
+          href="../../components/button/style.css">
+
+    <link rel="stylesheet"
+          href="../../components/input/style.css">
 
 </head>
 
 <body>
 
-    <main>
+    <div class="showcase-layout">
 
-        <h1>Hello Buddy 🚀</h1>
+        <aside class="showcase-sidebar">
 
-        <p>
-            Internal Design System for INV.in
-        </p>
+            <h2>INV.UI</h2>
 
-        <section>
+            <nav>
 
-            <h2>Buttons</h2>
+                <h3>Foundations</h3>
 
-            <button class="inv-btn inv-btn-primary">
-                Continue
-            </button>
-            <section>
+                <ul>
+                    <li>Colors</li>
+                    <li>Typography</li>
+                    <li>Spacing</li>
+                </ul>
 
-    <h2>Inputs</h2>
+                <h3>Components</h3>
 
-    <div class="inv-input-group">
+                <ul>
+                    <li>UI-001 Button</li>
+                    <li>UI-002 Input</li>
+                    <li>UI-003 Card</li>
+                    <li>UI-004 Header</li>
+                </ul>
 
-        <label class="inv-label" for="showcase-input">
-            Product Name
-        </label>
+            </nav>
 
-        <input
-            id="showcase-input"
-            class="inv-input"
-            type="text"
-            placeholder="Enter product name">
+        </aside>
 
+        <main class="showcase">
+
+            <!-- ==========================================
+                Hero
+            =========================================== -->
+
+            <header class="showcase-header">
+
+                <span class="showcase-tag">
+                    INV.UI • Design System
+                </span>
+
+                <h1 class="showcase-title">
+                    Design once.<br>
+                    Build forever.
+                </h1>
+
+                <p class="showcase-description">
+                    The official design system powering the INV.in platform.
+                    Every component is crafted once and reused everywhere.
+                </p>
+
+                <div class="showcase-meta">
+
+                    <span>Version 2.0 Alpha</span>
+
+                    <span>•</span>
+
+                    <span>Crafted for INV.in</span>
+
+                </div>
+
+            </header>
+
+            <!-- ==========================================
+                Component Library
+            =========================================== -->
+
+            <section class="component-library">
+
+                <!-- UI-001 -->
+
+                <article class="component-card">
+
+                    <span class="component-id">
+                        UI-001
+                    </span>
+
+                    <h2>
+                        Primary Button
+                    </h2>
+
+                    <p>
+                        Primary action button used throughout INV.in.
+                    </p>
+
+                    <div class="component-preview">
+
+                        <button class="inv-btn inv-btn-primary">
+                            Continue
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <!-- UI-002 -->
+
+                <article class="component-card">
+
+                    <span class="component-id">
+                        UI-002
+                    </span>
+
+                    <h2>
+                        Input
+                    </h2>
+
+                    <p>
+                        Standard text input component for forms.
+                    </p>
+
+                    <div class="component-preview">
+
+                        <div class="inv-input-group">
+
+                            <label class="inv-label"
+                                for="product-name">
+
+                                Product Name
+
+                            </label>
+
+                            <input
+                                id="product-name"
+                                class="inv-input"
+                                type="text"
+                                placeholder="Enter product name">
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+        </main>
+        
     </div>
-
-</section>
-
-        </section>
-
-    </main>
 
 </body>
 
