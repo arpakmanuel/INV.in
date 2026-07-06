@@ -1,0 +1,216 @@
+/* ==========================================================
+   INV.UI Component
+   UI-003 : Product Card
+   Version : 2.0.0-alpha.2
+========================================================== */
+
+
+/* ==========================================================
+   Card
+========================================================== */
+
+.inv-card{
+
+    display:grid;
+
+    grid-template-columns:var(--card-image-size) 1fr;
+
+    gap:var(--space-5);
+
+    align-items:start;
+
+    padding:var(--space-6);
+
+    background:var(--color-card);
+
+    border:1px solid var(--color-border-light);
+
+    border-radius:var(--radius-lg);
+
+    box-shadow:var(--shadow-sm);
+
+    transition:
+        transform var(--transition-fast),
+        box-shadow var(--transition-normal);
+
+}
+
+.inv-card:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:var(--shadow-md);
+
+}
+
+
+/* ==========================================================
+   Media
+========================================================== */
+
+.inv-card-media{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.inv-card-placeholder{
+
+    width:var(--card-image-size);
+
+    height:var(--card-image-size);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border:2px dashed var(--color-border-light);
+
+    border-radius:var(--radius-md);
+
+    background:var(--color-card);
+
+    color:var(--color-text-secondary);
+
+    font-size:var(--text-sm);
+
+    font-weight:var(--fw-medium);
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+
+/* ==========================================================
+   Content
+========================================================== */
+
+.inv-card-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-2);
+
+}
+
+.inv-card-sku{
+
+    font-size:var(--text-xs);
+
+    color:var(--color-text-secondary);
+
+    opacity:.65;
+
+    letter-spacing:.04em;
+
+}
+
+.inv-card-title{
+
+    margin:var(--space-2) 0 var(--space-3);
+
+    line-height:var(--lh-tight);
+
+}
+
+.inv-card-category{
+
+    margin:0;
+
+    color:var(--color-text-secondary);
+
+}
+
+.inv-card-price{
+
+    font-size:var(--text-lg);
+
+    font-weight:var(--fw-bold);
+
+    color:var(--color-primary-700);
+
+}
+
+.inv-card-stock{
+
+    font-size:var(--text-sm);
+
+    font-weight:var(--fw-medium);
+
+}
+
+
+/* ==========================================================
+   Actions
+========================================================== */
+
+.inv-card-actions{
+
+    grid-column:1 / -1;
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:var(--space-3);
+
+    margin-top:var(--space-3);
+
+    padding-top:var(--space-4);
+
+    border-top:1px solid var(--color-border-light);
+
+}
+
+
+/* ==========================================================
+   Mobile
+========================================================== */
+
+@media (max-width:768px){
+
+    .inv-card{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .inv-card-placeholder{
+
+        width:var(--card-image-size-mobile);
+
+        height:var(--card-image-size-mobile);
+
+    }
+
+    .inv-card-content{
+
+        align-items:center;
+
+        text-align:center;
+
+    }
+
+    .inv-card-actions{
+
+        justify-content:center;
+
+    }
+
+    .inv-card-actions .inv-btn{
+
+        flex:1;
+
+        max-width:160px;
+
+    }
+
+}

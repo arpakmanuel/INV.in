@@ -49,11 +49,14 @@
     <link rel="stylesheet"
           href="../../components/input/style.css">
 
+    <link rel="stylesheet"
+      href="../../components/card/style.css">
+
 </head>
 
 <body>
 
-    <div class="showcase-layout">
+    <div class="showcase-layout sidebar-collapsed">
 
         <aside class="showcase-sidebar">
 
@@ -87,7 +90,10 @@
             <!-- ==========================================
                 Hero
             =========================================== -->
+            <button class="sidebar-toggle">
 
+                ☰
+            </button>
             <header class="showcase-header">
 
                 <span class="showcase-tag">
@@ -182,6 +188,74 @@
                                 placeholder="Enter product name">
 
                         </div>
+
+                    </div>
+
+                </article>
+
+                <article class="component-card">
+
+                    <span class="component-id">
+                        UI-003
+                    </span>
+
+                    <h2>Product Card</h2>
+
+                    <p>
+                        Standard product card for INV.in.
+                    </p>
+
+                    <div class="component-preview">
+
+                        <article class="inv-card">
+
+                            <div class="inv-card-media">
+
+                                <div class="inv-card-placeholder">
+
+                                    Product Image
+
+                                </div>
+
+                            </div>
+
+                            <div class="inv-card-content">
+
+                                <span class="inv-card-sku">
+                                    SKU : INV-10001
+                                </span>
+
+                                <h3 class="inv-card-title">
+                                    Tulip Necklace
+                                </h3>
+
+                                <p class="inv-card-category">
+                                    Necklace
+                                </p>
+
+                                <div class="inv-card-price">
+                                    ₹499
+                                </div>
+
+                                <div class="inv-card-stock">
+                                    🟢 In Stock
+                                </div>
+
+                            </div>
+
+                            <footer class="inv-card-actions">
+
+                                <button class="inv-btn inv-btn-secondary">
+                                    View
+                                </button>
+
+                                <button class="inv-btn inv-btn-primary">
+                                    Edit
+                                </button>
+
+                            </footer>
+
+                        </article>
 
                     </div>
 
