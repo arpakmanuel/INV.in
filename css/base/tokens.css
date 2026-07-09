@@ -1,123 +1,155 @@
 /* ============================================================
-   INV.UI Design Tokens v1.0
+   INV.UI Design Tokens
    Project : INV.in Core
-   Version : 2.0.0-alpha.1
-   ============================================================ */
+   Version : 2.0.0-alpha.2
+============================================================ */
 
-:root {
+:root{
 
-  /* ============================================================
-     BRAND COLORS
-     ============================================================ */
+    /* ============================================================
+       BRAND COLORS
+    ============================================================ */
 
-  --color-primary-100: #E7F1EA;
-  --color-primary-300: #9BB89E;
-  --color-primary-500: #5D7C63;
-  --color-primary-700: #3E5944;
-  --color-primary-900: #24352A;
+    --color-primary-100:#E7F1EA;
+    --color-primary-300:#9BB89E;
+    --color-primary-500:#5D7C63;
+    --color-primary-700:#3E5944;
+    --color-primary-900:#24352A;
 
-  --color-secondary-100: #F2ECE8;
-  --color-secondary-300: #C6AA97;
-  --color-secondary-500: #8A6A56;
-  --color-secondary-700: #624838;
-  --color-secondary-900: #3A291F;
+    --color-secondary-100:#F2ECE8;
+    --color-secondary-300:#C6AA97;
+    --color-secondary-500:#8A6A56;
+    --color-secondary-700:#624838;
+    --color-secondary-900:#3A291F;
 
-  --color-accent-100: #F8EED5;
-  --color-accent-300: #E8C87D;
-  --color-accent-500: #C8A44D;
-  --color-accent-700: #9A7A2D;
-  --color-accent-900: #5F4A18;
+    --color-accent-100:#F8EED5;
+    --color-accent-300:#E8C87D;
+    --color-accent-500:#C8A44D;
+    --color-accent-700:#9A7A2D;
+    --color-accent-900:#5F4A18;
 
-  /* ============================================================
-     BACKGROUND
-     ============================================================ */
 
-  --color-background: #FAF7F2;
-  --color-surface: #F3EFE8;
-  --color-card: #FFFFFF;
+    /* ============================================================
+       BACKGROUND
+    ============================================================ */
 
-  /* ============================================================
-     TEXT
-     ============================================================ */
+    --color-background:#FAF7F2;
+    --color-surface:#F3EFE8;
+    --color-card:#FFFFFF;
 
-  --color-text-primary: #2B2B2B;
-  --color-text-secondary: #6B6B6B;
-  --color-text-disabled: #A5A5A5;
-  --color-text-inverse: #FFFFFF;
 
-  /* ============================================================
-     STATUS
-     ============================================================ */
+    /* ============================================================
+       TEXT
+    ============================================================ */
 
-  --color-success: #4E8C63;
-  --color-warning: #D89A2B;
-  --color-error: #C45A45;
-  --color-info: #4A789C;
+    --color-text-primary:#2B2B2B;
+    --color-text-secondary:#6B6B6B;
+    --color-text-disabled:#A5A5A5;
+    --color-text-inverse:#FFFFFF;
 
-  /* ============================================================
-     BORDER
-     ============================================================ */
 
-  --color-border-light: #E5DED5;
-  --color-border-medium: #D2C7BB;
-  --color-border-dark: #B6A99B;
+    /* ============================================================
+       STATUS
+    ============================================================ */
 
-  /* ============================================================
-     SPACING
-     8-Point Grid
-     ============================================================ */
+    --color-success:#4E8C63;
+    --color-warning:#D89A2B;
+    --color-error:#C45A45;
+    --color-info:#4A789C;
 
-  --space-1: 4px;
-  --space-2: 8px;
-  --space-3: 12px;
-  --space-4: 16px;
-  --space-5: 24px;
-  --space-6: 32px;
-  --space-7: 40px;
-  --space-8: 48px;
-  --space-9: 64px;
 
-  /* ============================================================
-     BORDER RADIUS
-     ============================================================ */
+    /* ============================================================
+       BORDERS
+    ============================================================ */
 
-  --radius-sm: 8px;
-  --radius-md: 12px;
-  --radius-lg: 16px;
-  --radius-xl: 24px;
-  --radius-full: 9999px;
+    --color-border-light:#E5DED5;
+    --color-border-medium:#D2C7BB;
+    --color-border-dark:#B6A99B;
 
-  /* ============================================================
-     SHADOWS
-     ============================================================ */
 
-  --shadow-sm: 0 2px 6px rgba(0,0,0,.05);
-  --shadow-md: 0 6px 16px rgba(0,0,0,.08);
-  --shadow-lg: 0 12px 28px rgba(0,0,0,.12);
+    /* ============================================================
+       SPACING
+       8pt Grid
+    ============================================================ */
 
-  /* ============================================================
-     TRANSITIONS
-     ============================================================ */
+    --space-1:4px;
+    --space-2:8px;
+    --space-3:12px;
+    --space-4:16px;
+    --space-5:24px;
+    --space-6:32px;
+    --space-7:40px;
+    --space-8:48px;
+    --space-9:64px;
 
-  --transition-fast: 120ms ease;
-  --transition-normal: 180ms ease;
-  --transition-page: 250ms ease;
-  --transition-modal: 300ms ease;
 
-  /* ============================================================
-     LAYOUT
-     ============================================================ */
+    /* ============================================================
+       BORDER RADIUS
+    ============================================================ */
 
-  --header-height: 72px;
-  --bottom-nav-height: 76px;
-  --content-width: 1200px;
+    --radius-sm:8px;
+    --radius-md:12px;
+    --radius-lg:16px;
+    --radius-xl:24px;
+    --radius-full:9999px;
 
-  /* ============================================================
-     Z-INDEX
-     ============================================================ */
 
-  --z-dropdown: 100;
-  --z-sticky: 200;
-  --z-modal: 500;
-  --z-toast: 900;
+    /* ============================================================
+       SHADOWS
+    ============================================================ */
+
+    --shadow-sm:0 2px 6px rgba(0,0,0,.05);
+    --shadow-md:0 6px 16px rgba(0,0,0,.08);
+    --shadow-lg:0 12px 28px rgba(0,0,0,.12);
+
+
+    /* ============================================================
+       TRANSITIONS
+    ============================================================ */
+
+    --transition-fast:120ms ease;
+    --transition-normal:180ms ease;
+    --transition-page:250ms ease;
+    --transition-modal:300ms ease;
+
+
+    /* ============================================================
+       LAYOUT
+    ============================================================ */
+
+    --layout-max-width:1200px;
+
+    --sidebar-width:220px;
+
+    --content-width:1200px;
+
+    --header-height:72px;
+
+    --bottom-nav-height:76px;
+
+
+    /* ============================================================
+       COMPONENT TOKENS
+    ============================================================ */
+
+    --card-image-size:180px;
+
+    --card-image-size-mobile:140px;
+
+    --button-height:48px;
+
+    --input-height:48px;
+
+    --drawer-width:360px;
+
+
+    /* ============================================================
+       Z-INDEX
+    ============================================================ */
+
+    --z-dropdown:100;
+    --z-sticky:200;
+    --z-modal:500;
+    --z-toast:900;
+
 }

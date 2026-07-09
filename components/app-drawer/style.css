@@ -1,0 +1,255 @@
+/* ==========================================================
+   INV.UI Component
+   UI-005 : App Drawer
+   Version : 1.0.0
+========================================================== */
+
+
+/* ==========================================================
+   Drawer
+========================================================== */
+
+.app-drawer{
+
+    position:fixed;
+
+    top:0;
+
+    right:-380px;
+
+    width:360px;
+
+    height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    background:var(--color-card);
+
+    box-shadow:var(--shadow-lg);
+
+    transition:right var(--transition-modal);
+
+    z-index:var(--z-modal);
+
+}
+
+
+/* ==========================================================
+   Active
+========================================================== */
+
+.app-drawer.open{
+
+    right:0;
+
+}
+
+
+/* ==========================================================
+   Profile
+========================================================== */
+
+.app-drawer-profile{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    padding:var(--space-8) var(--space-6);
+
+    border-bottom:1px solid var(--color-border-light);
+
+}
+
+.app-avatar{
+
+    width:88px;
+
+    height:88px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:var(--color-primary-100);
+
+    color:var(--color-primary-700);
+
+    font-size:28px;
+
+    font-weight:var(--fw-bold);
+
+    margin-bottom:var(--space-4);
+
+}
+
+.app-user-name{
+
+    margin-bottom:var(--space-2);
+
+}
+
+.app-edit-profile{
+
+    font-size:var(--text-sm);
+
+    color:var(--color-primary-500);
+
+}
+
+
+/* ==========================================================
+   Navigation
+========================================================== */
+
+.app-drawer-nav{
+
+    display:flex;
+
+    flex-direction:column;
+
+    padding:var(--space-5);
+
+    gap:var(--space-1);
+
+}
+
+.app-drawer-nav a{
+
+    padding:var(--space-3) var(--space-4);
+
+    border-radius:var(--radius-md);
+
+    transition:
+        background var(--transition-fast),
+        color var(--transition-fast);
+
+}
+
+.app-drawer-nav a:hover{
+
+    background:var(--color-primary-100);
+
+    color:var(--color-primary-700);
+
+}
+
+
+/* ==========================================================
+   Footer
+========================================================== */
+
+.app-drawer-footer{
+
+    margin-top:auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--space-2);
+
+    padding:var(--space-5);
+
+    border-top:1px solid var(--color-border-light);
+
+}
+
+.app-drawer-footer a{
+
+    padding:var(--space-3) var(--space-4);
+
+    border-radius:var(--radius-md);
+
+}
+
+.app-drawer-footer a:hover{
+
+    background:var(--color-primary-100);
+
+}
+
+
+/* ==========================================================
+   Overlay
+========================================================== */
+
+.app-drawer-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.35);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:
+        opacity var(--transition-modal),
+        visibility var(--transition-modal);
+
+    z-index:calc(var(--z-modal) - 1);
+
+}
+
+.app-drawer-overlay.open{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+
+.drawer-preview{
+
+    position:relative;
+
+    overflow:hidden;
+
+    height:750px;
+
+}
+
+.drawer-preview .app-drawer{
+
+    position:absolute;
+
+    top:0;
+
+    right:0;
+
+    width:360px;
+
+    height:100%;
+
+    box-shadow:none;
+
+}
+
+
+/* ==========================================================
+   Mobile
+========================================================== */
+
+@media (max-width:768px){
+
+    .app-drawer{
+
+        width:100%;
+
+        right:-100%;
+
+    }
+
+}

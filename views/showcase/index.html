@@ -52,11 +52,17 @@
     <link rel="stylesheet"
       href="../../components/card/style.css">
 
+    <link rel="stylesheet"
+      href="../../components/header/style.css">
+      
+    <link rel="stylesheet"
+      href="../../components/app-drawer/style.css">
+
 </head>
 
 <body>
 
-    <div class="showcase-layout sidebar-collapsed">
+    <div class="showcase-layout">
 
         <aside class="showcase-sidebar">
 
@@ -90,10 +96,7 @@
             <!-- ==========================================
                 Hero
             =========================================== -->
-            <button class="sidebar-toggle">
-
-                ☰
-            </button>
+        
             <header class="showcase-header">
 
                 <span class="showcase-tag">
@@ -125,147 +128,32 @@
             <!-- ==========================================
                 Component Library
             =========================================== -->
-
             <section class="component-library">
-
-                <!-- UI-001 -->
-
-                <article class="component-card">
-
-                    <span class="component-id">
-                        UI-001
-                    </span>
-
-                    <h2>
-                        Primary Button
-                    </h2>
-
-                    <p>
-                        Primary action button used throughout INV.in.
-                    </p>
-
-                    <div class="component-preview">
-
-                        <button class="inv-btn inv-btn-primary">
-                            Continue
-                        </button>
-
-                    </div>
-
-                </article>
-
-                <!-- UI-002 -->
-
-                <article class="component-card">
-
-                    <span class="component-id">
-                        UI-002
-                    </span>
-
-                    <h2>
-                        Input
-                    </h2>
-
-                    <p>
-                        Standard text input component for forms.
-                    </p>
-
-                    <div class="component-preview">
-
-                        <div class="inv-input-group">
-
-                            <label class="inv-label"
-                                for="product-name">
-
-                                Product Name
-
-                            </label>
-
-                            <input
-                                id="product-name"
-                                class="inv-input"
-                                type="text"
-                                placeholder="Enter product name">
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-                <article class="component-card">
-
-                    <span class="component-id">
-                        UI-003
-                    </span>
-
-                    <h2>Product Card</h2>
-
-                    <p>
-                        Standard product card for INV.in.
-                    </p>
-
-                    <div class="component-preview">
-
-                        <article class="inv-card">
-
-                            <div class="inv-card-media">
-
-                                <div class="inv-card-placeholder">
-
-                                    Product Image
-
-                                </div>
-
-                            </div>
-
-                            <div class="inv-card-content">
-
-                                <span class="inv-card-sku">
-                                    SKU : INV-10001
-                                </span>
-
-                                <h3 class="inv-card-title">
-                                    Tulip Necklace
-                                </h3>
-
-                                <p class="inv-card-category">
-                                    Necklace
-                                </p>
-
-                                <div class="inv-card-price">
-                                    ₹499
-                                </div>
-
-                                <div class="inv-card-stock">
-                                    🟢 In Stock
-                                </div>
-
-                            </div>
-
-                            <footer class="inv-card-actions">
-
-                                <button class="inv-btn inv-btn-secondary">
-                                    View
-                                </button>
-
-                                <button class="inv-btn inv-btn-primary">
-                                    Edit
-                                </button>
-
-                            </footer>
-
-                        </article>
-
-                    </div>
-
-                </article>
 
             </section>
 
         </main>
         
     </div>
+
+    <!-- ==========================================
+        INV.UI Engine
+    =========================================== -->
+
+    <script src="../../showcase/engine/registry.js"></script>
+
+    <script src="../../showcase/engine/loader.js"></script>
+
+    <script src="../../showcase/engine/renderer.js"></script>
+
+    <script src="../../showcase/script.js"></script>
+
+
+    <!-- ==========================================
+        Interactive Components
+    =========================================== -->
+
+    <script src="../../components/app-drawer/script.js"></script>
 
 </body>
 
